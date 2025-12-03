@@ -1,0 +1,21 @@
+id_envio, servicio, costo, destinatario{nombre, ciudad}
+101, Express, 250, {Juan Perez, Guadalajara}
+102, Standard, 120, {Maria Lopez, CDMX}
+103, Express, 300, {Carlos Ruiz, Monterrey}
+104, Standard, 150, {Ana Salas, Puebla}
+105, Express, 280, {Luis Gama, Cancun}
+106, Standard, 130, {Sofia Diaz, Toluca}
+107, Express, 260, {Pedro Gil, Leon}
+108, Standard, 110, {Luz Silva, Merida}
+109, Express, 290, {Jorge Paz, Tijuana}
+110, Standard, 140, {Elena Cruz, Morelia}
+111, Express, 270, {Raul Mora, Veracruz}
+112, Standard, 125, {Diana Sol, Oaxaca}
+113, Express, 310, {Ivan Rey, Queretaro}
+114, Standard, 115, {Sara Miel, Mazatlan}
+115, Express, 255, {Paco Leon, Saltillo}
+116, Standard, 135, {Gaby Rios, Durango}
+117, Express, 295, {Beto Vega, Xalapa}
+118, Standard, 145, {Alma Rico, Tampico}
+119, Express, 265, {Nora Paz, Cuernavaca}
+120, Standard, 122, {Leo Mata, Pachuca}

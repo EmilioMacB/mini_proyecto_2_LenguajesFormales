@@ -1,0 +1,182 @@
+[
+    {
+      "id_envio": 101,
+      "servicio": "Express",
+      "costo": 250,
+      "destinatario": {
+        "nombre": "Juan Perez",
+        "ciudad": "Guadalajara"
+      }
+    },
+    {
+      "id_envio": 102,
+      "servicio": "Standard",
+      "costo": 120,
+      "destinatario": {
+        "nombre": "Maria Lopez",
+        "ciudad": "CDMX"
+      }
+    },
+    {
+      "id_envio": 103,
+      "servicio": "Express",
+      "costo": 300,
+      "destinatario": {
+        "nombre": "Carlos Ruiz",
+        "ciudad": "Monterrey"
+      }
+    },
+    {
+      "id_envio": 104,
+      "servicio": "Standard",
+      "costo": 150,
+      "destinatario": {
+        "nombre": "Ana Salas",
+        "ciudad": "Puebla"
+      }
+    },
+    {
+      "id_envio": 105,
+      "servicio": "Express",
+      "costo": 280,
+      "destinatario": {
+        "nombre": "Luis Gama",
+        "ciudad": "Cancun"
+      }
+    },
+    {
+      "id_envio": 106,
+      "servicio": "Standard",
+      "costo": 130,
+      "destinatario": {
+        "nombre": "Sofia Diaz",
+        "ciudad": "Toluca"
+      }
+    },
+    {
+      "id_envio": 107,
+      "servicio": "Express",
+      "costo": 260,
+      "destinatario": {
+        "nombre": "Pedro Gil",
+        "ciudad": "Leon"
+      }
+    },
+    {
+      "id_envio": 108,
+      "servicio": "Standard",
+      "costo": 110,
+      "destinatario": {
+        "nombre": "Luz Silva",
+        "ciudad": "Merida"
+      }
+    },
+    {
+      "id_envio": 109,
+      "servicio": "Express",
+      "costo": 290,
+      "destinatario": {
+        "nombre": "Jorge Paz",
+        "ciudad": "Tijuana"
+      }
+    },
+    {
+      "id_envio": 110,
+      "servicio": "Standard",
+      "costo": 140,
+      "destinatario": {
+        "nombre": "Elena Cruz",
+        "ciudad": "Morelia"
+      }
+    },
+    {
+      "id_envio": 111,
+      "servicio": "Express",
+      "costo": 270,
+      "destinatario": {
+        "nombre": "Raul Mora",
+        "ciudad": "Veracruz"
+      }
+    },
+    {
+      "id_envio": 112,
+      "servicio": "Standard",
+      "costo": 125,
+      "destinatario": {
+        "nombre": "Diana Sol",
+        "ciudad": "Oaxaca"
+      }
+    },
+    {
+      "id_envio": 113,
+      "servicio": "Express",
+      "costo": 310,
+      "destinatario": {
+        "nombre": "Ivan Rey",
+        "ciudad": "Queretaro"
+      }
+    },
+    {
+      "id_envio": 114,
+      "servicio": "Standard",
+      "costo": 115,
+      "destinatario": {
+        "nombre": "Sara Miel",
+        "ciudad": "Mazatlan"
+      }
+    },
+    {
+      "id_envio": 115,
+      "servicio": "Express",
+      "costo": 255,
+      "destinatario": {
+        "nombre": "Paco Leon",
+        "ciudad": "Saltillo"
+      }
+    },
+    {
+      "id_envio": 116,
+      "servicio": "Standard",
+      "costo": 135,
+      "destinatario": {
+        "nombre": "Gaby Rios",
+        "ciudad": "Durango"
+      }
+    },
+    {
+      "id_envio": 117,
+      "servicio": "Express",
+      "costo": 295,
+      "destinatario": {
+        "nombre": "Beto Vega",
+        "ciudad": "Xalapa"
+      }
+    },
+    {
+      "id_envio": 118,
+      "servicio": "Standard",
+      "costo": 145,
+      "destinatario": {
+        "nombre": "Alma Rico",
+        "ciudad": "Tampico"
+      }
+    },
+    {
+      "id_envio": 119,
+      "servicio": "Express",
+      "costo": 265,
+      "destinatario": {
+        "nombre": "Nora Paz",
+        "ciudad": "Cuernavaca"
+      }
+    },
+    {
+      "id_envio": 120,
+      "servicio": "Standard",
+      "costo": 122,
+      "destinatario": {
+        "nombre": "Leo Mata",
+        "ciudad": "Pachuca"
+      }
+    }
+  ]
