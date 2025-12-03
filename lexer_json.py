@@ -15,24 +15,14 @@ t_LBRACKET  = r'\['
 t_RBRACKET  = r'\]'
 t_COMMA     = r','
 t_COLON     = r':'
+t_STRING    = r'"[A-ÿ0-9;, \._]*"' 
+t_NUMBER    = r'[0-9]+' 
+t_ignore    = ' \t\n\r'  # ignorar espacios y tabs
 
-# regla para Strings (incluyendo comillas)
-def t_STRING(t):
-    r'\"([^\\\n]|(\\.))*?\"'
-
-    return t
-
-# regla para Números
-def t_NUMBER(t):
-    r'\d+'
-    t.value = int(t.value)
-    return t
-
-# ignorar espacios y tabs
-t_ignore = ' \t\n\r'
 
 def t_error(t):
-    print("Caracter ilegal '%s'" % t.value[0])
+    print("Illegal character ", t.value[0])
     t.lexer.skip(1)
+
 
 lexer = lex.lex()

@@ -64,11 +64,11 @@ def procesar_datos():
             contenido = f.read()
         
         # 2. Parsear (Analizar)
-        print("Analizando datos.json...")
+        print("Leyendo archivo datos.json y analizando...")
         resultado = parser.parse(contenido)
         
         if resultado:
-            print("Analisis exitoso. Generando salida.txt...")
+            print("Se analizo correctamente. Generando el txt...")
             
             # 3. Generar salida formato TOON
             # Formato: id_envio, servicio, costo, destinatario{nombre, ciudad}
@@ -78,23 +78,24 @@ def procesar_datos():
             lines.append("id_envio, servicio, costo, destinatario{nombre, ciudad}")
             
             for item in resultado:
-                # Extraer datos simples
-                id_e = str(item.get('id_envio', ''))
-                serv = str(item.get('servicio', ''))
-                cost = str(item.get('costo', ''))
                 
+                # Extraer datos simples
+                id_envio = str(item.get('id_envio', ''))
+                servicio = str(item.get('servicio', ''))
+                costo = str(item.get('costo', ''))
+
                 # Procesar objeto anidado (destinatario)
-                dest = item.get('destinatario', {})
-                nombre = dest.get('nombre', '')
-                ciudad = dest.get('ciudad', '')
+                destinatario = item.get('destinatario', {})
+                nombre = destinatario.get('nombre', '')
+                ciudad = destinatario.get('ciudad', '')
                 
                 # Formatear estilo TOON compacto: {valor1, valor2}
-                dest_str = "{" + f"{nombre}, {ciudad}" + "}"
+                destinatario_str = "{" + f"{nombre}, {ciudad}" + "}"
                 
                 # Unir todo
-                linea = f"{id_e}, {serv}, {cost}, {dest_str}"
+                linea = f"{id_envio}, {servicio}, {costo}, {destinatario_str}"
                 lines.append(linea)
-            
+
             # 4. Guardar archivo txt
             with open('salida.txt', 'w', encoding='utf-8') as f_out:
                 f_out.write('\n'.join(lines))
