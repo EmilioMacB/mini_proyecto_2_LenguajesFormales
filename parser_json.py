@@ -12,8 +12,8 @@ def p_elements_multiple(p):
 
 def p_elements_single(p):
     'elements : object'
-    p[0] = [p[1]] # Lista con un solo objeto
-
+    p[0] = [p[1]] 
+    
 def p_object(p):
     'object : LBRACE members RBRACE'
     p[0] = p[2] # El objeto es el diccionario de sus miembros

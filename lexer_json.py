@@ -15,7 +15,7 @@ t_LBRACKET  = r'\['
 t_RBRACKET  = r'\]'
 t_COMMA     = r','
 t_COLON     = r':'
-t_STRING    = r'"[A-ÿ0-9;, \._]*"' 
+t_STRING    = r'"[A-ÿ0-9;, \._@#$!%&*()_-]*"' 
 t_NUMBER    = r'[0-9]+' 
 t_ignore    = ' \t\n\r'  # ignorar espacios y tabs
 
