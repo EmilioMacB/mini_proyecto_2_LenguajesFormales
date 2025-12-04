@@ -55,22 +55,22 @@ def p_error(p):
 # Construir el parser
 parser = yacc.yacc()
 
-# --- LECTURA Y GENERACIÓN DE SALIDA ---
+# !!!!!!!!!!!!!!Aqui se hace la lectura y generacion de salida
 
 def procesar_datos():
     try:
-        # 1. Leer archivo de entrada
+        # 1 Leer archivo de entrada
         with open('datos.json', 'r', encoding='utf-8') as f:
             contenido = f.read()
         
-        # 2. Parsear (Analizar)
+        # 2 Parsear (Analizar)
         print("Leyendo archivo datos.json y analizando...")
         resultado = parser.parse(contenido)
         
         if resultado:
             print("Se analizo correctamente. Generando el txt...")
             
-            # 3. Generar salida formato TOON
+            # 3 Generar salida formato TOON
             # Formato: id_envio, servicio, costo, destinatario{nombre, ciudad}
             
             lines = []
@@ -97,7 +97,7 @@ def procesar_datos():
                 lines.append(linea)
 
             # 4. Guardar archivo txt
-            with open('salida.txt', 'w', encoding='utf-8') as f_out:
+            with open('ejemploVideo.txt', 'w', encoding='utf-8') as f_out:
                 f_out.write('\n'.join(lines))
                 
             print("Archivo salida.txt creado correctamente.")
